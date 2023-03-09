@@ -1,0 +1,19 @@
+{
+  "name": "p3_oh_my_food",
+  "version": "1.0.0",
+  "description": "projet 3 formation react open classrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/index.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merite15/p3_open_classrooms_react_OhMyFood.git"
+  },
+  "author": "KIOUNGOU Merite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merite15/p3_open_classrooms_react_OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Merite15/p3_open_classrooms_react_OhMyFood#readme"
+}
