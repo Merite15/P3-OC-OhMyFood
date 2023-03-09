@@ -1,0 +1,10 @@
+.header-section {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.header-section img {
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
