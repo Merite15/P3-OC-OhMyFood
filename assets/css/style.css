@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   list-style: none;
   padding: 0px;
@@ -6,8 +9,161 @@
   text-decoration: none;
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  padding: 25px 10px;
+}
+header a {
+  font-size: 20px;
+  float: left;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.header-section img {
+  height: 30px;
 }
 
 footer {
@@ -253,6 +409,21 @@ body .loader i {
     transform: rotate(360deg);
   }
 }
+button {
+  padding: 15px;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin: auto;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+button:hover, button:active {
+  opacity: 0.8;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -490,6 +661,667 @@ footer a {
   }
   main #tutorial ol li a {
     justify-content: center;
+  }
+}
+* {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  padding: 25px 10px;
+}
+header a {
+  font-size: 20px;
+  float: left;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.header-section img {
+  height: 30px;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 20px;
+  font-weight: 300;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+footer ul li i {
+  width: 20px;
+  height: 25px;
+}
+footer ul li span {
+  padding-left: 10px;
+  font-weight: 400;
+}
+footer ul li:nth-of-type(4) {
+  margin: 10px 0px 20px 0px;
+}
+
+/*Loader*/
+body {
+  z-index: 1;
+  position: absolute;
+}
+body .loader {
+  display: flex;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(246, 246, 246);
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+  animation-duration: 3s;
+  animation: hide-loader 3s;
+  animation-fill-mode: forwards;
+}
+body .loader .first__loader {
+  background-color: #9356DC;
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+}
+body .loader .second__loader {
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FF79DA;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+}
+body .loader .third__loader {
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+body .loader i {
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes hide-loader {
+  70% {
+    opacity: 2;
+  }
+  85% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*hearth animation*/
+.like {
+  position: relative;
+}
+.like i:nth-of-type(1) {
+  position: absolute;
+  transform: scale(1);
+  transition: 300ms ease-in-out;
+}
+.like i:nth-of-type(2) {
+  color: transparent;
+  transform: scale(0);
+  transition: 300ms ease-in-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.like:hover i:nth-of-type(1), .like:active i:nth-of-type(1) {
+  transform: scale(0);
+  color: transparent;
+}
+.like:hover i:nth-of-type(2), .like:active i:nth-of-type(2) {
+  transform: scale(1);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+}
+
+/*Page for menu*/
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.menu #starter article:nth-of-type(1),
+.menu #dishes article:nth-of-type(1),
+.menu #dessert article:nth-of-type(1) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0s;
+}
+.menu #starter article:nth-of-type(2),
+.menu #dishes article:nth-of-type(2),
+.menu #dessert article:nth-of-type(2) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.4s;
+}
+.menu #starter article:nth-of-type(3),
+.menu #dishes article:nth-of-type(3),
+.menu #dessert article:nth-of-type(3) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.8s;
+}
+.menu #starter article:nth-of-type(4),
+.menu #dishes article:nth-of-type(4),
+.menu #dessert article:nth-of-type(4) {
+  animation: animated-menu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 1.2s;
+}
+
+@keyframes animated-menu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menuItem {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
+@keyframes check-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  padding: 15px;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin: auto;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
+button:hover, button:active {
+  opacity: 0.8;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  width: 100%;
+  max-width: 1900px;
+  min-width: 0px;
+}
+body .main-menu {
+  display: flex;
+}
+body .main-menu figure {
+  flex-basis: 100%;
+  height: 300px;
+}
+body .main-menu figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+body .main-menu .menu {
+  min-width: 0px;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 40px 0px 50px 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f4f4f4;
+  z-index: 1;
+  margin-top: -50px;
+  justify-content: center;
+}
+body .main-menu .menu > h1 {
+  font-family: "shrikhand";
+  font-size: 1.7em;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 0px 20px 40px 20px;
+}
+body .main-menu .menu #starter,
+body .main-menu .menu #dishes,
+body .main-menu .menu #dessert {
+  margin: 0px 15px 50px 15px;
+}
+body .main-menu .menu #starter h2,
+body .main-menu .menu #dishes h2,
+body .main-menu .menu #dessert h2 {
+  font-weight: 400;
+  padding-left: 5px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+body .main-menu .menu #starter h2 .green-line,
+body .main-menu .menu #dishes h2 .green-line,
+body .main-menu .menu #dessert h2 .green-line {
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 1px;
+}
+body .main-menu .menu #starter article,
+body .main-menu .menu #dishes article,
+body .main-menu .menu #dessert article {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+body .main-menu .menu #starter article .detail-price,
+body .main-menu .menu #dishes article .detail-price,
+body .main-menu .menu #dessert article .detail-price {
+  display: flex;
+  flex-basis: 90%;
+  transition-duration: 1s;
+  min-width: 0px;
+}
+body .main-menu .menu #starter article .detail-price .detail,
+body .main-menu .menu #dishes article .detail-price .detail,
+body .main-menu .menu #dessert article .detail-price .detail {
+  flex-basis: 90%;
+  padding: 10px 0px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body .main-menu .menu #starter article .detail-price .detail h3,
+body .main-menu .menu #dishes article .detail-price .detail h3,
+body .main-menu .menu #dessert article .detail-price .detail h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  font-weight: 450;
+}
+body .main-menu .menu #starter article .detail-price .detail p,
+body .main-menu .menu #dishes article .detail-price .detail p,
+body .main-menu .menu #dessert article .detail-price .detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+body .main-menu .menu #starter article .detail-price .price,
+body .main-menu .menu #dishes article .detail-price .price,
+body .main-menu .menu #dessert article .detail-price .price {
+  flex-basis: 10%;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  position: relative;
+  right: -10%;
+  transition-duration: 1s;
+  font-weight: 500;
+}
+body .main-menu .menu #starter article .checkmenu,
+body .main-menu .menu #dishes article .checkmenu,
+body .main-menu .menu #dessert article .checkmenu {
+  background-color: #99E2D0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -15%;
+  transition-duration: 1s;
+  width: 10%;
+}
+body .main-menu .menu #starter article .checkmenu i,
+body .main-menu .menu #dishes article .checkmenu i,
+body .main-menu .menu #dessert article .checkmenu i {
+  font-size: 25px;
+  color: white;
+}
+body .main-menu .menu #starter article:hover .detail-price,
+body .main-menu .menu #starter article:active .detail-price,
+body .main-menu .menu #dishes article:hover .detail-price,
+body .main-menu .menu #dishes article:active .detail-price,
+body .main-menu .menu #dessert article:hover .detail-price,
+body .main-menu .menu #dessert article:active .detail-price {
+  flex-basis: 85%;
+}
+body .main-menu .menu #starter article:hover .detail-price .detail,
+body .main-menu .menu #starter article:active .detail-price .detail,
+body .main-menu .menu #dishes article:hover .detail-price .detail,
+body .main-menu .menu #dishes article:active .detail-price .detail,
+body .main-menu .menu #dessert article:hover .detail-price .detail,
+body .main-menu .menu #dessert article:active .detail-price .detail {
+  flex-basis: 90%;
+}
+body .main-menu .menu #starter article:hover .detail-price .price,
+body .main-menu .menu #starter article:active .detail-price .price,
+body .main-menu .menu #dishes article:hover .detail-price .price,
+body .main-menu .menu #dishes article:active .detail-price .price,
+body .main-menu .menu #dessert article:hover .detail-price .price,
+body .main-menu .menu #dessert article:active .detail-price .price {
+  flex-basis: 10%;
+  right: 0%;
+}
+body .main-menu .menu #starter article:hover .checkmenu,
+body .main-menu .menu #starter article:active .checkmenu,
+body .main-menu .menu #dishes article:hover .checkmenu,
+body .main-menu .menu #dishes article:active .checkmenu,
+body .main-menu .menu #dessert article:hover .checkmenu,
+body .main-menu .menu #dessert article:active .checkmenu {
+  width: 15%;
+  right: 0%;
+  min-width: 35px;
+}
+body .main-menu .menu #starter article:hover .checkmenu i,
+body .main-menu .menu #starter article:active .checkmenu i,
+body .main-menu .menu #dishes article:hover .checkmenu i,
+body .main-menu .menu #dishes article:active .checkmenu i,
+body .main-menu .menu #dessert article:hover .checkmenu i,
+body .main-menu .menu #dessert article:active .checkmenu i {
+  font-size: 25px;
+  animation: animationiconecheck 1s;
+}
+body .main-menu .menu button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 980px) {
+  body .main-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .main-menu .menu {
+    display: flex;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: -50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  }
+  body .main-menu .menu > h1 {
+    padding-left: 25px;
+  }
+  body .main-menu .menu #starter,
+  body .main-menu .menu #dishes,
+  body .main-menu .menu #dessert {
+    width: 30%;
+  }
+  body .main-menu .menu #starter article,
+  body .main-menu .menu #dishes article,
+  body .main-menu .menu #dessert article {
+    flex-basis: 100%;
+    display: flex;
+  }
+  body .main-menu .menu #starter article .detail-price,
+  body .main-menu .menu #dishes article .detail-price,
+  body .main-menu .menu #dessert article .detail-price {
+    width: 60%;
+  }
+  body .main-menu .menu #starter article .detail-price .detail,
+  body .main-menu .menu #dishes article .detail-price .detail,
+  body .main-menu .menu #dessert article .detail-price .detail {
+    flex-basis: 95%;
+  }
+  body .main-menu .menu #starter article .detail-price .price,
+  body .main-menu .menu #dishes article .detail-price .price,
+  body .main-menu .menu #dessert article .detail-price .price {
+    flex-basis: 5%;
+  }
+  body .main-menu .menu #starter article .detail-price .checkmenu,
+  body .main-menu .menu #dishes article .detail-price .checkmenu,
+  body .main-menu .menu #dessert article .detail-price .checkmenu {
+    flex-basis: 10%;
   }
 }
 

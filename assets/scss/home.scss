@@ -26,6 +26,7 @@ main {
             }
         }
     }
+
     #location {
         background-color: rgba(246, 246, 246, 255);
         display: flex;
@@ -48,6 +49,7 @@ main {
             font-weight: 300;
         }
     }
+
     #tutorial {
         display: flex;
         flex-wrap: wrap;
@@ -116,8 +118,7 @@ main {
                 }
             }
         }
-    }
-    > div {
+    } > div {
         flex-basis: 100%;
         background-color: rgba(246, 246, 246, 255);
         #restaurant {
