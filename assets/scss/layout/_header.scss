@@ -1,3 +1,17 @@
+// header commun
+header{
+    padding: 25px 10px;
+    a{
+        font-size: 20px;
+        float: left;
+    }
+    p{
+        font-family: "Shrikhand";
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
 // header index 
 .header-section{
     display: flex;

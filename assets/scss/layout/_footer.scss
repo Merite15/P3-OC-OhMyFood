@@ -1,0 +1,29 @@
+footer {
+    background-color: rgba(53, 53, 53, 255);
+    color: white;
+
+    padding: 20px;
+    font-weight: 300;
+
+    h2 {
+        font-family: "Shrikhand", cursive;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+    ul {
+        li {
+            i {
+                width: 20px;
+                height: 25px;
+            }
+            span {
+                padding-left: 10px;
+                font-weight: 400;
+            }
+        }
+        li:nth-of-type(4) {
+            margin: 10px 0px 20px 0px;
+        }
+    }
+}

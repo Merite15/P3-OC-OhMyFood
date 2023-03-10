@@ -1,3 +1,16 @@
+header {
+  padding: 25px 10px;
+}
+header a {
+  font-size: 20px;
+  float: left;
+}
+header p {
+  font-family: "Shrikhand";
+  text-align: center;
+  font-size: 30px;
+}
+
 .header-section {
   display: flex;
   justify-content: center;
@@ -5,6 +18,489 @@
 }
 .header-section img {
   height: 30px;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 20px;
+  font-weight: 300;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+footer ul li i {
+  width: 20px;
+  height: 25px;
+}
+footer ul li span {
+  padding-left: 10px;
+  font-weight: 400;
+}
+footer ul li:nth-of-type(4) {
+  margin: 10px 0px 20px 0px;
+}
+
+/*Loader*/
+body {
+  z-index: 1;
+  position: absolute;
+}
+body .loader {
+  display: flex;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(246, 246, 246);
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+  animation-duration: 3s;
+  animation: hide-loader 3s;
+  animation-fill-mode: forwards;
+}
+body .loader .first__loader {
+  background-color: #9356DC;
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+}
+body .loader .second__loader {
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FF79DA;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+}
+body .loader .third__loader {
+  padding: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+body .loader i {
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes hide-loader {
+  70% {
+    opacity: 2;
+  }
+  85% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*hearth animation*/
+.like {
+  position: relative;
+}
+.like i:nth-of-type(1) {
+  position: absolute;
+  transform: scale(1);
+  transition: 300ms ease-in-out;
+}
+.like i:nth-of-type(2) {
+  color: transparent;
+  transform: scale(0);
+  transition: 300ms ease-in-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.like:hover i:nth-of-type(1), .like:active i:nth-of-type(1) {
+  transform: scale(0);
+  color: transparent;
+}
+.like:hover i:nth-of-type(2), .like:active i:nth-of-type(2) {
+  transform: scale(1);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+}
+
+/*Page for menu*/
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.menu #starter article:nth-of-type(1),
+.menu #dishes article:nth-of-type(1),
+.menu #dessert article:nth-of-type(1) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0s;
+}
+.menu #starter article:nth-of-type(2),
+.menu #dishes article:nth-of-type(2),
+.menu #dessert article:nth-of-type(2) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.4s;
+}
+.menu #starter article:nth-of-type(3),
+.menu #dishes article:nth-of-type(3),
+.menu #dessert article:nth-of-type(3) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.8s;
+}
+.menu #starter article:nth-of-type(4),
+.menu #dishes article:nth-of-type(4),
+.menu #dessert article:nth-of-type(4) {
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 1.2s;
+}
+
+@keyframes animationmenu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menuItem {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
+@keyframes animationiconecheck {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main form {
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-top: 1px lightgrey solid;
+  box-shadow: inset -2px 2px 6px rgba(54, 54, 54, 0.2);
+}
+main form input {
+  border: none;
+  background-color: rgb(234, 234, 234);
+  justify-content: center;
+  padding-left: 10px;
+  max-width: 200px;
+}
+main form input::placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+main #location {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-width: 100%;
+}
+main #location h1 {
+  font-size: 25px;
+  flex-basis: 100%;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 40px;
+}
+main #location p {
+  font-size: 15px;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 0px 20px 20px 20px;
+  font-weight: 300;
+}
+main #tutorial {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main #tutorial h2 {
+  flex-basis: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 30px 0px 20px 10px;
+}
+main #tutorial ol {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-bottom: 25px;
+  counter-reset: compteliste;
+}
+main #tutorial ol li {
+  flex-basis: 80%;
+  border-radius: 15px;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  background-color: rgb(246, 246, 246);
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+main #tutorial ol li a {
+  flex-basis: 100%;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+main #tutorial ol li a i {
+  padding: 30px;
+  color: grey;
+  font-size: 1.1em;
+  width: 15px;
+}
+main #tutorial ol li:hover {
+  background-color: #f5edff;
+}
+main #tutorial ol li:hover i {
+  color: #9356DC;
+}
+main #tutorial ol li::before {
+  counter-increment: compteliste 1;
+  content: counter(compteliste);
+  position: absolute;
+  left: -10px;
+  bottom: 30px;
+  font-weight: 400;
+  font-size: 0.9em;
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  color: white;
+}
+main #tutorial ol li i {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  color: grey;
+  text-align: center;
+}
+main > div {
+  flex-basis: 100%;
+  background-color: rgb(246, 246, 246);
+}
+main > div #restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(246, 246, 246);
+  row-gap: 15px;
+  padding-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main > div #restaurant h2 {
+  flex-basis: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 50px 0px 20px 10px;
+}
+main > div #restaurant a {
+  background-color: white;
+  border: 10px none solid;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  flex-basis: 90%;
+  margin: auto;
+  position: relative;
+}
+main > div #restaurant a figure {
+  height: 210px;
+}
+main > div #restaurant a figure img {
+  width: 100%;
+  height: 210px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+}
+main > div #restaurant a div {
+  display: flex;
+  flex-wrap: wrap;
+}
+main > div #restaurant a div h3 {
+  flex-basis: 100%;
+  font-weight: 600;
+  padding: 10px 0px 5px 10px;
+}
+main > div #restaurant a div p {
+  font-weight: 300;
+  padding-left: 10px;
+}
+main > div #restaurant a div span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 10px;
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  font-weight: 500;
+  border-radius: 3px;
+}
+main > div #restaurant a div .like {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  font-size: 25px;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (min-width: 560px) {
+  main #location {
+    width: 100%;
+  }
+  main #tutorial {
+    display: flex;
+    justify-content: center;
+  }
+  main #tutorial ol {
+    flex-basis: 500px;
+  }
+  main #restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  main #restaurant a {
+    max-width: 45%;
+  }
+  main #restaurant a figure {
+    height: 220px;
+  }
+  main #restaurant a figure img {
+    object-fit: cover;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main #tutorial {
+    display: flex;
+    flex-basis: 100%;
+  }
+  main #tutorial ol {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  main #tutorial ol li {
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    flex-basis: 30%;
+    box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  }
+  main #tutorial ol li a {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

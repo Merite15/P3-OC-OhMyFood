@@ -1,1 +1,249 @@
 @import "./main.scss";
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    form {
+        width: 100%;
+        background-color: rgba(234, 234, 234, 255);
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        border-top: 1px lightgrey solid;
+        box-shadow: inset -2px 2px 6px rgba(54, 54, 54, 0.2);
+
+        input {
+            border: none;
+            background-color: rgba(234, 234, 234, 255);
+            justify-content: center;
+            padding-left: 10px;
+            max-width: 200px;
+            &::placeholder {
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+    #location {
+        background-color: rgba(246, 246, 246, 255);
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        max-width: 100%;
+        h1 {
+            font-size: 25px;
+            flex-basis: 100%;
+            font-weight: 600;
+            text-align: center;
+            padding: 15px 40px;
+        }
+        p {
+            font-size: 15px;
+            flex-basis: 100%;
+            text-align: center;
+            padding: 0px 20px 20px 20px;
+            font-weight: 300;
+        }
+    }
+    #tutorial {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        h2 {
+            flex-basis: 100%;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 30px 0px 20px 10px;
+        }
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            margin-bottom: 25px;
+            counter-reset: compteliste;
+            li {
+                flex-basis: 80%;
+                border-radius: 15px;
+                @include box-shadow;
+                background-color: rgba(246, 246, 246, 255);
+                margin: auto;
+                text-align: center;
+                font-weight: 500;
+                position: relative;
+                a {
+                    flex-basis: 100%;
+                    align-items: center;
+                    display: flex;
+                    height: 100%;
+                    i {
+                        padding: 30px;
+                        color: grey;
+                        font-size: 1.1em;
+                        width: 15px;
+                    }
+                }
+                &:hover {
+                    background-color: #f5edff;
+                    i {
+                        color: $primary-color;
+                    }
+                }
+                &::before {
+                    counter-increment: compteliste 1;
+                    content: counter(compteliste);
+                    position: absolute;
+                    left: -10px;
+                    bottom: 30px;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    background-color: $primary-color;
+                    border-radius: 20px;
+                    width: 15px;
+                    height: 15px;
+                    padding: 3px;
+                    color: white;
+                }
+                i {
+                    width: 20px;
+                    height: 20px;
+                    padding: 20px;
+                    color: grey;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    > div {
+        flex-basis: 100%;
+        background-color: rgba(246, 246, 246, 255);
+        #restaurant {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(246, 246, 246, 255);
+            row-gap: 15px;
+            padding-bottom: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            h2 {
+                flex-basis: 100%;
+                font-weight: 600;
+                font-size: 20px;
+                padding: 50px 0px 20px 10px;
+            }
+            a {
+                background-color: white;
+                border: 10px none solid;
+                border-radius: 20px;
+                padding-bottom: 15px;
+                flex-basis: 90%;
+                margin: auto;
+                position: relative;
+
+                figure {
+                    height: 210px;
+                    img {
+                        width: 100%;
+                        height: 210px;
+                        border-top-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                        object-fit: cover;
+                    }
+                }
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    h3 {
+                        flex-basis: 100%;
+                        font-weight: 600;
+                        padding: 10px 0px 5px 10px;
+                    }
+                    p {
+                        font-weight: 300;
+                        padding-left: 10px;
+                    }
+                    span {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        padding: 7px 10px;
+                        background-color: rgba(153, 226, 208, 255);
+                        color: rgba(0, 135, 102, 255);
+                        font-weight: 500;
+                        border-radius: 3px;
+                    }
+                    .like {
+                        position: absolute;
+                        bottom: 25px;
+                        right: 30px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    a {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    main {
+        #location {
+            width: 100%;
+        }
+        #tutorial {
+            display: flex;
+            justify-content: center;
+            ol {
+                flex-basis: 500px;
+            }
+        }
+        #restaurant {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            a {
+                max-width: 45%;
+                figure {
+                    height: 220px;
+                    img {
+                        object-fit: cover;
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        #tutorial {
+            display: flex;
+            flex-basis: 100%;
+            ol {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-basis: 100%;
+                justify-content: space-between;
+                li {
+                    border-radius: 15px;
+                    margin: auto;
+                    text-align: center;
+                    flex-basis: 30%;
+                    @include box-shadow;
+                    a {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
