@@ -889,4 +889,239 @@ img {
   height: 100px;
 }
 
+body {
+  width: 100%;
+  max-width: 1900px;
+  min-width: 0px;
+}
+body .main-menu {
+  display: flex;
+}
+body .main-menu figure {
+  flex-basis: 100%;
+  height: 300px;
+}
+body .main-menu figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+body .main-menu .menu {
+  min-width: 0px;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 40px 0px 50px 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f4f4f4;
+  z-index: 1;
+  margin-top: -50px;
+  justify-content: center;
+}
+body .main-menu .menu > h1 {
+  font-family: "pacifico", cursive;
+  font-size: 1.7em;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 0px 20px 40px 20px;
+}
+body .main-menu .menu #starter,
+body .main-menu .menu #dishes,
+body .main-menu .menu #dessert {
+  margin: 0px 15px 50px 15px;
+}
+body .main-menu .menu #starter h2,
+body .main-menu .menu #dishes h2,
+body .main-menu .menu #dessert h2 {
+  font-weight: 400;
+  padding-left: 5px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+body .main-menu .menu #starter h2 .green-line,
+body .main-menu .menu #dishes h2 .green-line,
+body .main-menu .menu #dessert h2 .green-line {
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 1px;
+}
+body .main-menu .menu #starter article,
+body .main-menu .menu #dishes article,
+body .main-menu .menu #dessert article {
+  background-color: white;
+  margin-bottom: 15px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  overflow: hidden;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+body .main-menu .menu #starter article .detail-price,
+body .main-menu .menu #dishes article .detail-price,
+body .main-menu .menu #dessert article .detail-price {
+  display: flex;
+  flex-basis: 90%;
+  transition-duration: 1s;
+  min-width: 0px;
+}
+body .main-menu .menu #starter article .detail-price .detail,
+body .main-menu .menu #dishes article .detail-price .detail,
+body .main-menu .menu #dessert article .detail-price .detail {
+  flex-basis: 90%;
+  padding: 10px 0px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body .main-menu .menu #starter article .detail-price .detail h3,
+body .main-menu .menu #dishes article .detail-price .detail h3,
+body .main-menu .menu #dessert article .detail-price .detail h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  font-weight: 450;
+}
+body .main-menu .menu #starter article .detail-price .detail p,
+body .main-menu .menu #dishes article .detail-price .detail p,
+body .main-menu .menu #dessert article .detail-price .detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+body .main-menu .menu #starter article .detail-price .price,
+body .main-menu .menu #dishes article .detail-price .price,
+body .main-menu .menu #dessert article .detail-price .price {
+  flex-basis: 10%;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  position: relative;
+  right: -10%;
+  transition-duration: 1s;
+  font-weight: 500;
+}
+body .main-menu .menu #starter article .checkmenu,
+body .main-menu .menu #dishes article .checkmenu,
+body .main-menu .menu #dessert article .checkmenu {
+  background-color: #99E2D0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -15%;
+  transition-duration: 1s;
+  width: 10%;
+}
+body .main-menu .menu #starter article .checkmenu i,
+body .main-menu .menu #dishes article .checkmenu i,
+body .main-menu .menu #dessert article .checkmenu i {
+  font-size: 25px;
+  color: white;
+}
+body .main-menu .menu #starter article:hover .detail-price,
+body .main-menu .menu #starter article:active .detail-price,
+body .main-menu .menu #dishes article:hover .detail-price,
+body .main-menu .menu #dishes article:active .detail-price,
+body .main-menu .menu #dessert article:hover .detail-price,
+body .main-menu .menu #dessert article:active .detail-price {
+  flex-basis: 85%;
+}
+body .main-menu .menu #starter article:hover .detail-price .detail,
+body .main-menu .menu #starter article:active .detail-price .detail,
+body .main-menu .menu #dishes article:hover .detail-price .detail,
+body .main-menu .menu #dishes article:active .detail-price .detail,
+body .main-menu .menu #dessert article:hover .detail-price .detail,
+body .main-menu .menu #dessert article:active .detail-price .detail {
+  flex-basis: 90%;
+}
+body .main-menu .menu #starter article:hover .detail-price .price,
+body .main-menu .menu #starter article:active .detail-price .price,
+body .main-menu .menu #dishes article:hover .detail-price .price,
+body .main-menu .menu #dishes article:active .detail-price .price,
+body .main-menu .menu #dessert article:hover .detail-price .price,
+body .main-menu .menu #dessert article:active .detail-price .price {
+  flex-basis: 10%;
+  right: 0%;
+}
+body .main-menu .menu #starter article:hover .checkmenu,
+body .main-menu .menu #starter article:active .checkmenu,
+body .main-menu .menu #dishes article:hover .checkmenu,
+body .main-menu .menu #dishes article:active .checkmenu,
+body .main-menu .menu #dessert article:hover .checkmenu,
+body .main-menu .menu #dessert article:active .checkmenu {
+  width: 15%;
+  right: 0%;
+  min-width: 35px;
+}
+body .main-menu .menu #starter article:hover .checkmenu i,
+body .main-menu .menu #starter article:active .checkmenu i,
+body .main-menu .menu #dishes article:hover .checkmenu i,
+body .main-menu .menu #dishes article:active .checkmenu i,
+body .main-menu .menu #dessert article:hover .checkmenu i,
+body .main-menu .menu #dessert article:active .checkmenu i {
+  font-size: 25px;
+  animation: animationiconecheck 1s;
+}
+body .main-menu .menu button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 980px) {
+  body .main-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .main-menu .menu {
+    display: flex;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: -50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
+  }
+  body .main-menu .menu > h1 {
+    padding-left: 25px;
+  }
+  body .main-menu .menu #starter,
+  body .main-menu .menu #dishes,
+  body .main-menu .menu #dessert {
+    width: 30%;
+  }
+  body .main-menu .menu #starter article,
+  body .main-menu .menu #dishes article,
+  body .main-menu .menu #dessert article {
+    flex-basis: 100%;
+    display: flex;
+  }
+  body .main-menu .menu #starter article .detail-price,
+  body .main-menu .menu #dishes article .detail-price,
+  body .main-menu .menu #dessert article .detail-price {
+    width: 60%;
+  }
+  body .main-menu .menu #starter article .detail-price .detail,
+  body .main-menu .menu #dishes article .detail-price .detail,
+  body .main-menu .menu #dessert article .detail-price .detail {
+    flex-basis: 95%;
+  }
+  body .main-menu .menu #starter article .detail-price .price,
+  body .main-menu .menu #dishes article .detail-price .price,
+  body .main-menu .menu #dessert article .detail-price .price {
+    flex-basis: 5%;
+  }
+  body .main-menu .menu #starter article .detail-price .checkmenu,
+  body .main-menu .menu #dishes article .detail-price .checkmenu,
+  body .main-menu .menu #dessert article .detail-price .checkmenu {
+    flex-basis: 10%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
