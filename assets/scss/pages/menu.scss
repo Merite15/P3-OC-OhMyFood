@@ -39,7 +39,7 @@ body {
                 padding: 0px 20px 40px 20px;
                 text-transform: uppercase;
             }
-            .menu-list__starter,
+            .menu-list__entries,
             .menu-list__dishes,
             .menu-list__dessert {
                 margin: 0px 15px 50px 15px;
@@ -171,7 +171,7 @@ body {
                 }
                 .menu-list__dishes,
                 .menu-list__dessert,
-                .menu-list__starter {
+                .menu-list__entries {
                     width: 30%;
                     article {
                         flex-basis: 100%;
