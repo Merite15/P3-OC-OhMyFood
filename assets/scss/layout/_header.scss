@@ -1,10 +1,13 @@
 // header commun
 header{
     padding: 25px 10px;
+    display: flex;
+    align-items: center;
     
     a{
         font-size: 20px;
-        float: left;
+        color: black;
+        // float: left;
     }
 
     h1{

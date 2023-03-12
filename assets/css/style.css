@@ -144,10 +144,12 @@ body {
 
 header {
   padding: 25px 10px;
+  display: flex;
+  align-items: center;
 }
 header a {
   font-size: 20px;
-  float: left;
+  color: black;
 }
 header h1 {
   font-family: "Shrikhand", cursive;
@@ -615,6 +617,23 @@ body .restaurant-menu .menu-list .menu-list__entries,
 body .restaurant-menu .menu-list .menu-list__dishes,
 body .restaurant-menu .menu-list .menu-list__dessert {
   margin: 0px 15px 50px 15px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(1),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(1),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(2),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(2),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+body .restaurant-menu .menu-list .menu-list__entries:nth-of-type(3),
+body .restaurant-menu .menu-list .menu-list__dishes:nth-of-type(3),
+body .restaurant-menu .menu-list .menu-list__dessert:nth-of-type(3) {
+  animation-delay: 1.3s;
 }
 body .restaurant-menu .menu-list .menu-list__entries h2,
 body .restaurant-menu .menu-list .menu-list__dishes h2,
@@ -642,28 +661,6 @@ body .restaurant-menu .menu-list .menu-list__dessert article {
   overflow: hidden;
   cursor: pointer;
   flex-basis: 100%;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-body .restaurant-menu .menu-list .menu-list__entries article:nth-child(1),
-body .restaurant-menu .menu-list .menu-list__dishes article:nth-child(1),
-body .restaurant-menu .menu-list .menu-list__dessert article:nth-child(1) {
-  animation-delay: 0.25s;
-}
-body .restaurant-menu .menu-list .menu-list__entries article:nth-child(2),
-body .restaurant-menu .menu-list .menu-list__dishes article:nth-child(2),
-body .restaurant-menu .menu-list .menu-list__dessert article:nth-child(2) {
-  animation-delay: 0.5s;
-}
-body .restaurant-menu .menu-list .menu-list__entries article:nth-child(3),
-body .restaurant-menu .menu-list .menu-list__dishes article:nth-child(3),
-body .restaurant-menu .menu-list .menu-list__dessert article:nth-child(3) {
-  animation-delay: 0.75s;
-}
-body .restaurant-menu .menu-list .menu-list__entries article:nth-child(4),
-body .restaurant-menu .menu-list .menu-list__dishes article:nth-child(4),
-body .restaurant-menu .menu-list .menu-list__dessert article:nth-child(4) {
-  animation-delay: 1s;
 }
 body .restaurant-menu .menu-list .menu-list__entries article .menu-list__detail,
 body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail,

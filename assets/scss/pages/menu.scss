@@ -31,7 +31,7 @@ body {
             margin-top: -50px;
             justify-content: center;
             > h1 {
-                font-family: 'Shrikhand', cursive;
+                font-family: "Shrikhand", cursive;
                 font-size: 1.7em;
                 display: flex;
                 flex-basis: 100%;
@@ -42,6 +42,19 @@ body {
             .menu-list__dishes,
             .menu-list__dessert {
                 margin: 0px 15px 50px 15px;
+                opacity: 0;
+                animation: fadeIn 1s ease-in-out forwards;
+
+                &:nth-of-type(1) {
+                    animation-delay: 0.3s;
+                }
+                &:nth-of-type(2) {
+                    animation-delay: 0.8s;
+                }
+                &:nth-of-type(3) {
+                    animation-delay: 1.3s;
+                }
+
                 h2 {
                     font-weight: 400;
                     padding-left: 5px;
@@ -62,21 +75,6 @@ body {
                     overflow: hidden;
                     cursor: pointer;
                     flex-basis: 100%;
-                    opacity: 0;
-                    animation: fadeIn 1s ease-in-out forwards;
-
-                    &:nth-child(1) {
-                        animation-delay: $delay * 0.5;
-                    }
-                    &:nth-child(2) {
-                        animation-delay: $delay * 1;
-                    }
-                    &:nth-child(3) {
-                        animation-delay: $delay * 1.5;
-                    }
-                    &:nth-child(4) {
-                        animation-delay: $delay * 2;
-                    }
 
                     .menu-list__detail {
                         display: flex;
@@ -130,6 +128,7 @@ body {
                         }
                     }
                 }
+
                 article:hover,
                 article:active {
                     .menu-list__detail {
