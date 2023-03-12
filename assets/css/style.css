@@ -155,12 +155,12 @@ header h1 {
   font-size: 30px;
 }
 
-.header-section {
+.home-header {
   display: flex;
   justify-content: center;
   padding: 15px;
 }
-.header-section img {
+.home-header img {
   height: 30px;
 }
 
@@ -288,6 +288,7 @@ body .loader i {
   position: absolute;
   transform: scale(1);
   transition: 300ms ease-in-out;
+  color: gray;
 }
 .like i:nth-of-type(2) {
   color: transparent;
@@ -602,7 +603,6 @@ body .restaurant-menu .menu-list > h2 {
   flex-basis: 100%;
   justify-content: space-between;
   padding: 0px 20px 40px 20px;
-  text-transform: uppercase;
 }
 body .restaurant-menu .menu-list .menu-list__entries,
 body .restaurant-menu .menu-list .menu-list__dishes,
