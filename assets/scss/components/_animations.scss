@@ -90,10 +90,10 @@ body {
     }
 }
 
-/*hearth animation*/
-
+/* hearth animation */
 .like {
     position: relative;
+    cursor: pointer;
     i:nth-of-type(1) {
         position: absolute;
         transform: scale(1);

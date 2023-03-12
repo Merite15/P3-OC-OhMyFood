@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   list-style: none;
   padding: 0px;
@@ -281,9 +279,10 @@ body .loader i {
     visibility: hidden;
   }
 }
-/*hearth animation*/
+/* hearth animation */
 .like {
   position: relative;
+  cursor: pointer;
 }
 .like i:nth-of-type(1) {
   position: absolute;
@@ -562,328 +561,6 @@ main .restaurant-list .restaurant-list__section a div .like {
     height: 180px;
   }
 }
-* {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-header {
-  padding: 25px 10px;
-}
-header a {
-  font-size: 20px;
-  float: left;
-}
-header h1 {
-  font-family: "Pacifico", cursive;
-  text-align: center;
-  font-size: 30px;
-}
-
-.header-section {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-.header-section img {
-  height: 30px;
-}
-
-footer {
-  background-color: rgb(53, 53, 53);
-  color: white;
-  padding: 20px;
-  font-weight: 300;
-}
-footer h2 {
-  font-family: "pacifico", cursive;
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 20px;
-}
-footer a {
-  color: white;
-}
-footer ul li i {
-  width: 20px;
-  height: 25px;
-}
-footer ul li span {
-  padding-left: 10px;
-  font-weight: 400;
-}
-footer ul li:nth-of-type(4) {
-  margin: 10px 0px 20px 0px;
-}
-
-/*Loader*/
-body {
-  z-index: 1;
-  position: absolute;
-}
-body .loader {
-  display: flex;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: rgb(246, 246, 246);
-  justify-content: center;
-  align-items: center;
-  column-gap: 5%;
-  animation-duration: 3s;
-  animation: hide-loader 3s;
-  animation-fill-mode: forwards;
-}
-body .loader .first__loader {
-  background-color: #9356DC;
-  padding: 28px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  animation-name: loader;
-  animation-duration: 0.8s;
-  animation-timing-function: linear;
-}
-body .loader .second__loader {
-  padding: 28px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #FF79DA;
-  animation-name: loader;
-  animation-duration: 0.8s;
-  animation-delay: 0.5s;
-  animation-timing-function: linear;
-}
-body .loader .third__loader {
-  padding: 28px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #99E2D0;
-  animation-name: loader;
-  animation-duration: 0.8s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-}
-body .loader i {
-  font-size: 28px;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes loader {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  75% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@keyframes hide-loader {
-  70% {
-    opacity: 2;
-  }
-  85% {
-    opacity: 0;
-    z-index: 1;
-  }
-  100% {
-    z-index: 0;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-/*hearth animation*/
-.like {
-  position: relative;
-}
-.like i:nth-of-type(1) {
-  position: absolute;
-  transform: scale(1);
-  transition: 300ms ease-in-out;
-}
-.like i:nth-of-type(2) {
-  color: transparent;
-  transform: scale(0);
-  transition: 300ms ease-in-out;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.like:hover i:nth-of-type(1), .like:active i:nth-of-type(1) {
-  transform: scale(0);
-  color: transparent;
-}
-.like:hover i:nth-of-type(2), .like:active i:nth-of-type(2) {
-  transform: scale(1);
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-}
-
-button {
-  padding: 15px;
-  border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  margin: auto;
-  color: white;
-  border: none;
-  font-weight: 500;
-}
-button:hover, button:active {
-  opacity: 0.8;
-  box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
-  cursor: pointer;
-}
-
 img {
   width: 100px;
   height: 100px;
@@ -894,19 +571,19 @@ body {
   max-width: 1900px;
   min-width: 0px;
 }
-body .main-menu {
+body .restaurant-menu {
   display: flex;
 }
-body .main-menu figure {
+body .restaurant-menu figure {
   flex-basis: 100%;
   height: 300px;
 }
-body .main-menu figure img {
+body .restaurant-menu figure img {
   width: 100%;
   object-fit: cover;
   height: 100%;
 }
-body .main-menu .menu {
+body .restaurant-menu .menu-list {
   min-width: 0px;
   flex-basis: 100%;
   margin: 0 auto;
@@ -918,36 +595,38 @@ body .main-menu .menu {
   margin-top: -50px;
   justify-content: center;
 }
-body .main-menu .menu > h1 {
+body .restaurant-menu .menu-list > h2 {
   font-family: "pacifico", cursive;
   font-size: 1.7em;
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
   padding: 0px 20px 40px 20px;
+  text-transform: uppercase;
 }
-body .main-menu .menu #starter,
-body .main-menu .menu #dishes,
-body .main-menu .menu #dessert {
+body .restaurant-menu .menu-list .menu-list__starter,
+body .restaurant-menu .menu-list .menu-list__dishes,
+body .restaurant-menu .menu-list .menu-list__dessert {
   margin: 0px 15px 50px 15px;
 }
-body .main-menu .menu #starter h2,
-body .main-menu .menu #dishes h2,
-body .main-menu .menu #dessert h2 {
+body .restaurant-menu .menu-list .menu-list__starter h2,
+body .restaurant-menu .menu-list .menu-list__dishes h2,
+body .restaurant-menu .menu-list .menu-list__dessert h2 {
   font-weight: 400;
   padding-left: 5px;
   width: 100%;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
-body .main-menu .menu #starter h2 .green-line,
-body .main-menu .menu #dishes h2 .green-line,
-body .main-menu .menu #dessert h2 .green-line {
+body .restaurant-menu .menu-list .menu-list__starter h2 .menu-list--underline,
+body .restaurant-menu .menu-list .menu-list__dishes h2 .menu-list--underline,
+body .restaurant-menu .menu-list .menu-list__dessert h2 .menu-list--underline {
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 1px;
 }
-body .main-menu .menu #starter article,
-body .main-menu .menu #dishes article,
-body .main-menu .menu #dessert article {
+body .restaurant-menu .menu-list .menu-list__starter article,
+body .restaurant-menu .menu-list .menu-list__dishes article,
+body .restaurant-menu .menu-list .menu-list__dessert article {
   background-color: white;
   margin-bottom: 15px;
   display: flex;
@@ -957,42 +636,42 @@ body .main-menu .menu #dessert article {
   cursor: pointer;
   flex-basis: 100%;
 }
-body .main-menu .menu #starter article .detail-price,
-body .main-menu .menu #dishes article .detail-price,
-body .main-menu .menu #dessert article .detail-price {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail {
   display: flex;
   flex-basis: 90%;
   transition-duration: 1s;
   min-width: 0px;
 }
-body .main-menu .menu #starter article .detail-price .detail,
-body .main-menu .menu #dishes article .detail-price .detail,
-body .main-menu .menu #dessert article .detail-price .detail {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description {
   flex-basis: 90%;
   padding: 10px 0px 10px 10px;
   white-space: nowrap;
   overflow: hidden;
 }
-body .main-menu .menu #starter article .detail-price .detail h3,
-body .main-menu .menu #dishes article .detail-price .detail h3,
-body .main-menu .menu #dessert article .detail-price .detail h3 {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__description h3,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description h3,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description h3 {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9em;
+  font-size: 16px;
   padding-bottom: 10px;
-  font-weight: 450;
+  font-weight: 700;
 }
-body .main-menu .menu #starter article .detail-price .detail p,
-body .main-menu .menu #dishes article .detail-price .detail p,
-body .main-menu .menu #dessert article .detail-price .detail p {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__description p,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description p,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.8em;
   font-weight: 300;
 }
-body .main-menu .menu #starter article .detail-price .price,
-body .main-menu .menu #dishes article .detail-price .price,
-body .main-menu .menu #dessert article .detail-price .price {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__price {
   flex-basis: 10%;
   padding-right: 5px;
   display: flex;
@@ -1004,9 +683,9 @@ body .main-menu .menu #dessert article .detail-price .price {
   transition-duration: 1s;
   font-weight: 500;
 }
-body .main-menu .menu #starter article .checkmenu,
-body .main-menu .menu #dishes article .checkmenu,
-body .main-menu .menu #dessert article .checkmenu {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list--choice {
   background-color: #99E2D0;
   align-items: center;
   display: flex;
@@ -1016,68 +695,68 @@ body .main-menu .menu #dessert article .checkmenu {
   transition-duration: 1s;
   width: 10%;
 }
-body .main-menu .menu #starter article .checkmenu i,
-body .main-menu .menu #dishes article .checkmenu i,
-body .main-menu .menu #dessert article .checkmenu i {
+body .restaurant-menu .menu-list .menu-list__starter article .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article .menu-list--choice i {
   font-size: 25px;
   color: white;
 }
-body .main-menu .menu #starter article:hover .detail-price,
-body .main-menu .menu #starter article:active .detail-price,
-body .main-menu .menu #dishes article:hover .detail-price,
-body .main-menu .menu #dishes article:active .detail-price,
-body .main-menu .menu #dessert article:hover .detail-price,
-body .main-menu .menu #dessert article:active .detail-price {
+body .restaurant-menu .menu-list .menu-list__starter article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__starter article:active .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail {
   flex-basis: 85%;
 }
-body .main-menu .menu #starter article:hover .detail-price .detail,
-body .main-menu .menu #starter article:active .detail-price .detail,
-body .main-menu .menu #dishes article:hover .detail-price .detail,
-body .main-menu .menu #dishes article:active .detail-price .detail,
-body .main-menu .menu #dessert article:hover .detail-price .detail,
-body .main-menu .menu #dessert article:active .detail-price .detail {
+body .restaurant-menu .menu-list .menu-list__starter article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__starter article:active .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail .menu-list__description,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail .menu-list__description {
   flex-basis: 90%;
 }
-body .main-menu .menu #starter article:hover .detail-price .price,
-body .main-menu .menu #starter article:active .detail-price .price,
-body .main-menu .menu #dishes article:hover .detail-price .price,
-body .main-menu .menu #dishes article:active .detail-price .price,
-body .main-menu .menu #dessert article:hover .detail-price .price,
-body .main-menu .menu #dessert article:active .detail-price .price {
+body .restaurant-menu .menu-list .menu-list__starter article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__starter article:active .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list__detail .menu-list__price,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list__detail .menu-list__price {
   flex-basis: 10%;
   right: 0%;
 }
-body .main-menu .menu #starter article:hover .checkmenu,
-body .main-menu .menu #starter article:active .checkmenu,
-body .main-menu .menu #dishes article:hover .checkmenu,
-body .main-menu .menu #dishes article:active .checkmenu,
-body .main-menu .menu #dessert article:hover .checkmenu,
-body .main-menu .menu #dessert article:active .checkmenu {
+body .restaurant-menu .menu-list .menu-list__starter article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__starter article:active .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list--choice,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list--choice {
   width: 15%;
   right: 0%;
   min-width: 35px;
 }
-body .main-menu .menu #starter article:hover .checkmenu i,
-body .main-menu .menu #starter article:active .checkmenu i,
-body .main-menu .menu #dishes article:hover .checkmenu i,
-body .main-menu .menu #dishes article:active .checkmenu i,
-body .main-menu .menu #dessert article:hover .checkmenu i,
-body .main-menu .menu #dessert article:active .checkmenu i {
+body .restaurant-menu .menu-list .menu-list__starter article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__starter article:active .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dishes article:active .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article:hover .menu-list--choice i,
+body .restaurant-menu .menu-list .menu-list__dessert article:active .menu-list--choice i {
   font-size: 25px;
-  animation: animationiconecheck 1s;
+  animation: animationChoiceMenu 1s;
 }
-body .main-menu .menu button {
+body .restaurant-menu .menu-list button {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 980px) {
-  body .main-menu {
+  body .restaurant-menu {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  body .main-menu .menu {
+  body .restaurant-menu .menu-list {
     display: flex;
     flex-basis: 100%;
     max-width: 100%;
@@ -1088,38 +767,38 @@ body .main-menu .menu button {
     flex-wrap: wrap;
     box-shadow: 2px 6px 19px -7px rgba(0, 0, 0, 0.31);
   }
-  body .main-menu .menu > h1 {
+  body .restaurant-menu .menu-list > h2 {
     padding-left: 25px;
   }
-  body .main-menu .menu #starter,
-  body .main-menu .menu #dishes,
-  body .main-menu .menu #dessert {
+  body .restaurant-menu .menu-list .menu-list__dishes,
+  body .restaurant-menu .menu-list .menu-list__dessert,
+  body .restaurant-menu .menu-list .menu-list__starter {
     width: 30%;
   }
-  body .main-menu .menu #starter article,
-  body .main-menu .menu #dishes article,
-  body .main-menu .menu #dessert article {
+  body .restaurant-menu .menu-list .menu-list__dishes article,
+  body .restaurant-menu .menu-list .menu-list__dessert article,
+  body .restaurant-menu .menu-list .menu-list__starter article {
     flex-basis: 100%;
     display: flex;
   }
-  body .main-menu .menu #starter article .detail-price,
-  body .main-menu .menu #dishes article .detail-price,
-  body .main-menu .menu #dessert article .detail-price {
+  body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail,
+  body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail,
+  body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail {
     width: 60%;
   }
-  body .main-menu .menu #starter article .detail-price .detail,
-  body .main-menu .menu #dishes article .detail-price .detail,
-  body .main-menu .menu #dessert article .detail-price .detail {
+  body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__description,
+  body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__description,
+  body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__description {
     flex-basis: 95%;
   }
-  body .main-menu .menu #starter article .detail-price .price,
-  body .main-menu .menu #dishes article .detail-price .price,
-  body .main-menu .menu #dessert article .detail-price .price {
+  body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list__price,
+  body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list__price,
+  body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list__price {
     flex-basis: 5%;
   }
-  body .main-menu .menu #starter article .detail-price .checkmenu,
-  body .main-menu .menu #dishes article .detail-price .checkmenu,
-  body .main-menu .menu #dessert article .detail-price .checkmenu {
+  body .restaurant-menu .menu-list .menu-list__dishes article .menu-list__detail .menu-list--choice,
+  body .restaurant-menu .menu-list .menu-list__dessert article .menu-list__detail .menu-list--choice,
+  body .restaurant-menu .menu-list .menu-list__starter article .menu-list__detail .menu-list--choice {
     flex-basis: 10%;
   }
 }
