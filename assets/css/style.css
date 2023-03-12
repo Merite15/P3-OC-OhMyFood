@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   list-style: none;
   padding: 0px;
@@ -139,7 +139,7 @@ table {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -150,18 +150,25 @@ header a {
   float: left;
 }
 header h1 {
-  font-family: "Pacifico", cursive;
+  font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 30px;
+}
+header img {
+  height: 30px;
+  width: 200px;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer;
 }
 
 .home-header {
   display: flex;
   justify-content: center;
-  padding: 15px;
 }
 .home-header img {
   height: 30px;
+  cursor: pointer;
 }
 
 footer {
@@ -171,7 +178,7 @@ footer {
   font-weight: 300;
 }
 footer h2 {
-  font-family: "pacifico", cursive;
+  font-family: "Shrikhand", cursive;
   margin-bottom: 20px;
   width: 100%;
   font-size: 20px;
@@ -550,9 +557,6 @@ main .restaurant-list .restaurant-list__section a div .like {
     display: flex;
     justify-content: center;
   }
-  main .working ol {
-    flex-basis: 500px;
-  }
   main .restaurant-list__section {
     display: flex;
     flex-direction: row;
@@ -570,11 +574,6 @@ main .restaurant-list .restaurant-list__section a div .like {
     height: 180px;
   }
 }
-img {
-  width: 100px;
-  height: 100px;
-}
-
 body {
   width: 100%;
   max-width: 1900px;
@@ -604,8 +603,8 @@ body .restaurant-menu .menu-list {
   margin-top: -50px;
   justify-content: center;
 }
-body .restaurant-menu .menu-list > h2 {
-  font-family: "pacifico", cursive;
+body .restaurant-menu .menu-list > h1 {
+  font-family: "Shrikhand", cursive;
   font-size: 1.7em;
   display: flex;
   flex-basis: 100%;
