@@ -4,7 +4,8 @@
         "Merite",
         "Ohmyfood",
         "compteliste",
-        "ohmyfood"
+        "ohmyfood",
+        "prefixer"
     ],
     "liveServer.settings.port": 5501
 }
