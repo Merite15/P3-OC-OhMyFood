@@ -1,7 +1,7 @@
 /*Loader*/
 body {
     z-index: 1;
-    position: absolute;
+    // position: absolute;
     .loader {
         display: flex;
         z-index: 2;
@@ -126,10 +126,48 @@ body {
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
+        transform: translateY(-50px);
         opacity: 0;
     }
-    to {
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes animationChoiceMenu {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

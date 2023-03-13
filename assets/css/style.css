@@ -203,7 +203,6 @@ footer ul li:nth-of-type(4) {
 /*Loader*/
 body {
   z-index: 1;
-  position: absolute;
 }
 body .loader {
   display: flex;
@@ -319,11 +318,48 @@ body .loader i {
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
+    transform: translateY(-50px);
     opacity: 0;
   }
-  to {
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes animationChoiceMenu {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 button {
@@ -576,10 +612,8 @@ main .restaurant-list .restaurant-list__section a div .like {
     height: 180px;
   }
 }
-body {
-  width: 100%;
-  max-width: 1900px;
-  min-width: 0px;
+body .container {
+  max-width: 1440px;
 }
 body .restaurant-menu {
   display: flex;
@@ -778,6 +812,10 @@ body .restaurant-menu .menu-list button {
 }
 
 @media screen and (min-width: 980px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
   body .restaurant-menu {
     flex-direction: row;
     flex-wrap: wrap;

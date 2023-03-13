@@ -4,9 +4,10 @@
 // }
 
 body {
-    width: 100%;
-    max-width: 1900px;
-    min-width: 0px;
+    .container {
+        max-width: 1440px;
+    }
+
     .restaurant-menu {
         display: flex;
 
@@ -165,6 +166,8 @@ body {
 // Responsive
 @media screen and (min-width: 980px) {
     body {
+        display: flex;
+        justify-content: center;
         .restaurant-menu {
             flex-direction: row;
             flex-wrap: wrap;
